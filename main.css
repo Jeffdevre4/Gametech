@@ -1,0 +1,183 @@
+/* Fontes e Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #e63946;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #e63946;
+}
+
+.text-colored {
+    color: #e63946;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #202020;
+}
+
+.navbar-brand {
+    color: #e63946;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link {
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #e63946;
+}
+
+.navbar-toggler {
+    border-color: #e63946;
+}
+
+.navbar-toggler-icon {
+    background-color: #e63946;
+    border-radius: 50%;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #e63946;
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: #e63946;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+/* Seção "Sobre" */
+#sobre {
+    background-color: #202020;
+    padding: 4rem 0;
+}
+
+#sobre p, #sobre ul {
+    color: #cccccc;
+}
+
+#sobre ul li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Seções de Produtos e Acessórios */
+#produtos, #acessorios {
+    background-color: #181818;
+    padding: 4rem 0;
+}
+
+#produtos h2, #acessorios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#produtos .section-title,
+#acessorios .section-title {
+    font-size: 1.75rem;
+}
+
+#produtos img, #acessorios img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#produtos img:hover, #acessorios img:hover {
+    transform: scale(1.05);
+}
+
+#produtos h3, #acessorios h3 {
+    font-weight: 700;
+}
+
+#produtos p, #acessorios p {
+    color: #cccccc;
+    font-weight: 500;
+}
+
+/* Seção "Contato" */
+#contato {
+    background-color: #202020;
+    padding: 4rem 0;
+}
+
+#contato form {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#contato label {
+    color: #e63946;
+    font-weight: 700;
+}
+
+#contato input, #contato textarea {
+    background-color: #444444;
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contato input:focus, #contato textarea:focus {
+    outline: 2px solid #e63946;
+}
+
+#contato button {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #d62839;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre .section-title, #produtos .section-title, #acessorios .section-title {
+        font-size: 1.5rem;
+    }
+
+    #sobre img, #produtos img, #acessorios img {
+        height: 250px;
+    }
+}
